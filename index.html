@@ -110,6 +110,7 @@
       width: 100%;
       height: 100%;
       object-fit: cover;
+      display: block;
     }
 
     .name-title h1 {
@@ -390,8 +391,8 @@
     <header class="header-card">
       <div class="header-left">
         <div class="avatar-wrapper">
-          <!-- รูปภาพโปรไฟล์ของคุณ (รองรับทั้ง .jpg และ .png) -->
-          <img src="profile.jpg" alt="SUNISA SODSRIJAN" onerror="this.onerror=null; this.src='profile.png'; this.onerror=()=>this.src='https://ui-avatars.com/api/?name=Sunisa+Sodsrijan&background=f472b6&color=fff&size=150';">
+          <!-- รูปภาพโปรไฟล์ ดึงตรงจาก GitHub Raw URL พร้อม Fallback หลายนามสกุล -->
+          <img src="https://raw.githubusercontent.com/s6704022611025-star/sunisa/main/profile.jpg" alt="SUNISA SODSRIJAN" onerror="this.onerror=null; this.src='./profile.jpg'; this.onerror=()=>this.src='./profile.png';">
         </div>
         <div class="name-title">
           <h1>SUNISA SODSRIJAN 🌸</h1>
